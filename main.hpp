@@ -89,6 +89,7 @@ string MFN(string stname, int thisyear) {
         if((name.stname == stname) && (name.year == thisyear)) {
             if(i == 0) {
                 maxName = name.bname;
+                maxCnt = name.count;
             }
             else if(maxCnt < name.count) {
                 maxName = name.bname;
