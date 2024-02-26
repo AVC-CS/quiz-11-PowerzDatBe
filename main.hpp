@@ -72,6 +72,34 @@ int rewritesplitwords(string x, char delim) {
 
     return cntr;
 }
-/*******************************
- * Code your program here
- *******************************/
+
+string MFN(string stname, int thisyear) {
+    ifstream ifs;
+    Name name;
+    string maxName;
+    int i, maxCnt;
+
+    ifs.open("split.txt");
+    if(!ifs) {
+        cerr << "FILE COOKED" << endl;
+        exit(0);
+    }
+
+    i = 0; maxCnt = 0;
+    while(ifs >> name.stname >> name.gender >> name.year >> name.bname >> name.count) {
+        if((name.stname == stname) && (name.year == thisyear)) {
+            if(i == 0) {
+                maxName = name.bname;
+            }
+            else if(maxCnt < name.count) {
+                maxName = name.bname;
+                maxCnt = name.count;
+            }
+        }
+        i++;
+    }
+
+    ifs.close();
+
+    return maxName;
+}

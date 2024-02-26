@@ -17,8 +17,8 @@ int main()
 		cout << state << "\t" << gen << "\t" << year << "\t" << name << "\t" << cnt << endl;
 	cout << "the total number of lines is " << count << endl;
 
-	/*MFName = MFN("IN", 2018);
+	MFName = MFN("IN", 2018);
 	cout << "The Most frequently used name in IN, 2018 " << MFName << endl;
 	MFName = MFN("DE", 2018);
-	cout << "The Most frequently used name in DE, 2018 " << MFName << endl;*/
+	cout << "The Most frequently used name in DE, 2018 " << MFName << endl;
 }
