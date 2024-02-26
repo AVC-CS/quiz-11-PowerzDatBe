@@ -2,7 +2,6 @@
 #include <fstream>
 #include <string>
 #include <sstream>
-#include <vector>
 using namespace std;
 int rewritesplitwords(string, char);
 string MFN(string stname, int thisyear);
